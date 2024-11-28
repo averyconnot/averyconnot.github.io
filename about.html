@@ -8,35 +8,61 @@
     <style>
         .styled-paragraph {
             font-size: 1.1rem;
-            line-height: 1.6;
-            text-align: center;
-            margin: 20px 0;
+            margin: 20px auto;
+            max-width: 800px;
+            text-align: justify;
         }
         .styled-card {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            border: none;
+            transition: transform 0.2s;
         }
-        .card-img-top {
-            border-radius: 50%;
-            margin-top: 15px;
+        .styled-card:hover {
+            transform: scale(1.05);
         }
     </style>
 </head>
 <body>
-    <div class="container text-center mt-5">
-        <h1 class="card-title">ABOUT ME</h1>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">My Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="skills.html">Skill Set</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="card-title text-center my-4">ABOUT ME</h1>
         <p class="styled-paragraph">
-            Hi! I'm <strong>Avery Connot</strong>, a senior at the <strong>University of Oklahoma</strong>, studying 
-            <strong>Marketing</strong> and <strong>Management Information Systems</strong> with a concentration in 
-            <strong>Advertising</strong>. I am interested in pursuing a career where I can continue to learn and enhance 
-            the skills I have gained during my studies.
+            Hi! I'm <strong>Avery Connot</strong>, a senior at the <strong>University of Oklahoma</strong>, studying <strong>Marketing</strong> and <strong>Management Information Systems</strong> with a concentration in <strong>Advertising</strong>.
+            I am interested in pursuing a career where I can continue to learn and enhance the skills I have gained during my studies.
         </p>
         <div class="container mt-5">
             <div class="card styled-card" style="width: 18rem; margin: auto;">
-                <img src="https://media.licdn.com/dms/image/v2/D5603AQEPp6eZI7HRqg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697576600886?e=2147483647&v=beta&t=_UZl_Dfh92US3zxjakScnnPArD288wPeJ_5KXcyQ7u0" 
-                     class="card-img-top" 
-                     alt="Profile Picture">
-                <div class="card-body">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEPp6eZI7HRqg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1697576600886?e=2147483647&v=beta&t=_UZl_Dfh92US3zxjakScnnPArD288wPeJ_5KXcyQ7u0"
+                     class="card-img-top"
+                     alt="Profile Picture"
+                     style="border-radius: 50%; margin-top: 15px;">
+                <div class="card-body text-center">
                     <h5 class="card-title">Avery Connot</h5>
                     <p class="card-text">
                         Hi, connect with me on LinkedIn! I'd love to connect with you!
@@ -45,6 +71,13 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Avery's Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
