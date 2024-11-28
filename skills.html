@@ -3,42 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skill Sets</title>
+    <title>Skill Set</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css">
     <style>
         .skills-section {
             text-align: center;
             margin: 50px auto;
-            padding: 20px;
             max-width: 800px;
-            background-color: #f9f9f9;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-        .skills-section h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        .skills-section h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-            color: #555;
         }
         .skills-section ul {
             text-align: left;
-            margin: 20px auto;
-            padding: 0;
             list-style-type: disc;
-            max-width: 600px;
+            margin: 20px auto;
+            padding: 0 20px;
         }
-        .skills-section li {
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+        .skills-section h1, .skills-section h3 {
+            margin-bottom: 20px;
         }
     </style>
 </head>
 <body>
-    <div class="skills-section">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">My Website</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="skills.html">Skill Set</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="skills-section">
         <h1>Skill Sets</h1>
         <h3>Throughout my academic career, I have learned a comprehensive list of skills:</h3>
         <p>My skills include:</p>
@@ -54,6 +67,13 @@
             <li>SQL Server</li>
             <li>Power BI</li>
         </ul>
-    </div>
+    </main>
+
+    <footer class="text-center mt-4">
+        <p>&copy; 2024 Avery's Website. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
