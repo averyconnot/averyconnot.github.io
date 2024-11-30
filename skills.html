@@ -21,7 +21,7 @@
             background-color: rgba(255, 255, 255, 0.9); 
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
         }
         h1, h3 {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
@@ -32,9 +32,22 @@
         }
         ul {
             text-align: left;
-            list-style-type: disc;
             margin: 20px auto;
-            padding: 0 20px;
+            padding: 0;
+            list-style-type: none; 
+        }
+        ul li {
+            position: relative;
+            padding-left: 30px; 
+            margin-bottom: 10px;
+        }
+        ul li::before {
+            content: '★'; 
+            color: gold;
+            font-size: 1.5rem; 
+            position: absolute;
+            left: 0;
+            top: 0;
         }
         footer {
             padding: 10px 0;
@@ -88,6 +101,8 @@
                 <li>Python Code</li>
                 <li>SQL Server</li>
                 <li>Power BI</li>
+                <li>Hootsuite Basic Certification</li>
+                <li>Hootsuite Social Media</li>
             </ul>
         </div>
     </main>
