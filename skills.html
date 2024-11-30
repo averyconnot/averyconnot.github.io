@@ -15,25 +15,30 @@
             min-height: 100vh;
         }
         .skills-section {
-            text-align: center;
+            text-align: left;
             margin: 50px auto;
             max-width: 800px;
             background-color: rgba(255, 255, 255, 0.9); 
             padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
-        .skills-section ul {
+        h1, h3 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        ul {
             text-align: left;
             list-style-type: disc;
             margin: 20px auto;
             padding: 0 20px;
         }
-        h1, h3 {
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-        }
         footer {
             padding: 10px 0;
+            text-align: center;
         }
     </style>
 </head>
@@ -66,25 +71,28 @@
         </nav>
     </header>
 
-    <main class="skills-section">
+    <main>
         <h1>Skill Sets</h1>
         <h3>Throughout my academic career, I have learned a comprehensive list of skills:</h3>
         <p>My skills include:</p>
-        <ul>
-            <li>Adobe Photoshop</li>
-            <li>Adobe Illustrator</li>
-            <li>Adobe InDesign</li>
-            <li>Microsoft Excel</li>
-            <li>Microsoft PowerPoint</li>
-            <li>Microsoft Word</li>
-            <li>C# Code</li>
-            <li>Python Code</li>
-            <li>SQL Server</li>
-            <li>Power BI</li>
-        </ul>
+
+        <div class="skills-section">
+            <ul>
+                <li>Adobe Photoshop</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe InDesign</li>
+                <li>Microsoft Excel</li>
+                <li>Microsoft PowerPoint</li>
+                <li>Microsoft Word</li>
+                <li>C# Code</li>
+                <li>Python Code</li>
+                <li>SQL Server</li>
+                <li>Power BI</li>
+            </ul>
+        </div>
     </main>
 
-    <footer class="text-center mt-4">
+    <footer>
         <p>&copy; 2024 Avery's Website. All rights reserved.</p>
     </footer>
 
